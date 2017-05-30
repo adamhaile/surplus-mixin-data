@@ -1,0 +1,25 @@
+{
+  "name": "surplus-mixin-data",
+  "version": "0.4.0",
+  "description": "Two-way data binding mixin for Surplus applications",
+  "main": "index.js",
+  "module": "index.es.js",
+  "types": "index.es.d.ts",
+  "scripts": {
+    "test": "karma start",
+    "build": "tsc && rollup -c"
+  },
+  "author": "Adam Haile",
+  "license": "MIT",
+  "dependencies": {
+      "surplus": "../../surplus/packages/Surplus"
+  },
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "karma": "^1.7.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "rollup": "^0.41.6",
+    "typescript": "^2.3.2"
+  }
+}

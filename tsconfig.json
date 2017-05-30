@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "strict": true,
+        "outDir": ".",
+        "declaration": true
+    },
+    "files": [
+        "index.es.ts"
+    ]
+}
