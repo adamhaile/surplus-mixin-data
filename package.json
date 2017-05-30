@@ -12,7 +12,7 @@
   "author": "Adam Haile",
   "license": "MIT",
   "dependencies": {
-      "surplus": "../../surplus/packages/Surplus"
+      "surplus": "^0.4.3"
   },
   "devDependencies": {
     "jasmine": "^2.6.0",
