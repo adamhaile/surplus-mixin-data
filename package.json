@@ -1,6 +1,6 @@
 {
   "name": "surplus-mixin-data",
-  "version": "0.4.0",
+  "version": "0.5.0-beta1",
   "description": "Two-way data binding mixin for Surplus applications",
   "main": "index.js",
   "module": "index.es.js",
@@ -11,8 +11,8 @@
   },
   "author": "Adam Haile",
   "license": "MIT",
-  "dependencies": {
-      "surplus": "^0.4.3"
+  "peerDependencies": {
+    "surplus": "^0.5.0-beta1"
   },
   "devDependencies": {
     "jasmine": "^2.6.0",
