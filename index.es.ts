@@ -1,7 +1,7 @@
 import { S } from 'surplus';
 
 export default function data(signal : (v? : any) => any, arg1? : any, arg2? : any) {
-    var event = arg1 as string || 'change',
+    var event = arg1 as string || 'input',
         on = arg1 === undefined ? true : arg1,
         off = arg2 === undefined ? (on === true ? false : null) : arg2;
 

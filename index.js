@@ -1,11 +1,11 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('surplus')) :
-	typeof define === 'function' && define.amd ? define(['exports', 'surplus'], factory) :
-	(factory((global.SurplusDataMixin = global.SurplusDataMixin || {}),global.Surplus));
-}(this, (function (exports,surplus) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('surplus')) :
+	typeof define === 'function' && define.amd ? define(['surplus'], factory) :
+	(global.SurplusDataMixin = factory(global.Surplus));
+}(this, (function (surplus) { 'use strict';
 
 function data(signal, arg1, arg2) {
-    var event = arg1 || 'change', on = arg1 === undefined ? true : arg1, off = arg2 === undefined ? (on === true ? false : null) : arg2;
+    var event = arg1 || 'input', on = arg1 === undefined ? true : arg1, off = arg2 === undefined ? (on === true ? false : null) : arg2;
     return function (node) {
         if (node instanceof HTMLInputElement) {
             var type = node.type.toUpperCase();
@@ -86,8 +86,6 @@ function toString(v) {
     return v == null ? '' : v.toString();
 }
 
-exports['default'] = data;
-
-Object.defineProperty(exports, '__esModule', { value: true });
+return data;
 
 })));

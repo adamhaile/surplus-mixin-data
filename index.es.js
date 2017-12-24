@@ -1,6 +1,6 @@
 import { S } from 'surplus';
 export default function data(signal, arg1, arg2) {
-    var event = arg1 || 'change', on = arg1 === undefined ? true : arg1, off = arg2 === undefined ? (on === true ? false : null) : arg2;
+    var event = arg1 || 'input', on = arg1 === undefined ? true : arg1, off = arg2 === undefined ? (on === true ? false : null) : arg2;
     return function (node) {
         if (node instanceof HTMLInputElement) {
             var type = node.type.toUpperCase();
